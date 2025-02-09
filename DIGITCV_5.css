@@ -1,0 +1,112 @@
+/* Unit 4.2 */
+
+body {
+    /* background-color: hsl(48, 49%, 67%); */
+    background: linear-gradient(-45deg,
+    hsl(-48,49%,67%), hsl(48, 49%, 67%));
+    font-family: Nunito Sans;
+}
+
+/* #headshot, h1, h3, ul, ol, p, blockquote, table,{ */
+.quote {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+.paragraph {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+blockquote {
+    font-family: Caveat;
+    font-size: 2em;
+    letter-spacing: 15;
+    /* color: rgb(239, 236, 183); */
+    color: hsl(50, 50%, 50%);
+    text-shadow: 2px 2px rgb(147, 0, 200);
+}
+
+h2 {
+    background-color: hsl(50, 50%, 50%);
+    font-family: Honk;
+    font-size: 3em;
+    text-shadow: 10px 5px rgb(255,255,255);
+    line-height: 1.5;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(121, 0, 173);
+    font-weight: bold;
+    font-style: italic;
+}
+
+input:focus, input:hover, select:focus, select:hover, 
+    button:hover, .shortform:hover, .shortform:focus {
+    background-color: hsl(166, 100%, 50%);
+    outline: 100px sloid white
+}
+
+p {
+    font-size: 15px;
+}
+
+/* Need to make a pop out box describing the use of these technologies */
+.listlink li:hover {
+    /* color: hsl(255, 50%, 50%); */
+    color: rgb(151, 135, 10);
+    font-weight: bold
+}
+
+.score {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-width: 2px;
+}
+
+.chkbox:hover {
+    color: blue
+}
+
+a:hover {
+    outline: 2px solid #00ff22;
+    background-color: rgb(243, 54, 224);
+    color: blue
+}
+
+button:hover {
+    outline: 5px solid #00ff22;
+    color: rgb(255, 255, 255);
+}
+
+/* #page-top {
+    background-image: url(../images/sun.jpg);
+    width: 1500px;
+    height: 350px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+
+#INQUIRE-HEAR, #INQUIRE-FEEDBK, #INQUIRE-MISC-W, #INQUIRE-MISC-R,
+#INQUIRE-MISC-S, #INQUIRE-FEEDBK-MISC-I, #INQUIRE-FEEDBK-MISC-T{
+    background-image: url(../images/Iron-Man-Flying.jpg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 15%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #00ff22;
+}
+
+.longform:hover, .longform:focus {
+    outline: 5px solid #00ff22;
+    /* background-color:hsl(0, 0%, 0%); */
+    background-color: rgb(121, 0, 173);
+    color: white
+}
