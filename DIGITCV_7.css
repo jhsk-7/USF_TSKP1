@@ -1,0 +1,275 @@
+/* Unit 4.5 Execise #20 */
+
+body {
+    /* background-color: hsl(48, 49%, 67%); */
+    background: linear-gradient(-45deg,
+    hsl(-48,49%,67%), hsl(48, 49%, 67%));
+    font-family: Nunito Sans;
+}
+
+/* Nav shrinks and exapnds with page.
+Top background picture shrinks and exapands with page.
+Headshot picture shrinks and exapands with page.
+Top of page content moves */
+@media (max-width: 2000px) {
+    nav {
+        position: fixed;
+        top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 1;
+        background-color: rgb(218, 127, 223);
+        width: 100px;
+        height: 145px;
+    }
+
+    nav a {
+        font-size: .9rem;
+        font-style: italic;
+    }
+
+    #meat {
+        position: relative;
+        top: 240px
+    }
+
+    .sun, .headshot {
+        position: absolute;
+        z-index: -1;
+    }
+
+    .sun {
+        height: 360px;
+        width: 100%;
+    }
+
+    .headshot {
+        margin-left: 10%;
+        top: 40px;
+        border-radius: 20%;
+        height: 180px;
+        width: 135px
+    }
+}
+
+@media (max-width: 1200px) {
+    nav {
+        position: fixed;
+        top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 1;
+        background-color: rgb(218, 127, 223);
+        width: 70px;
+        height: 102px;
+    }
+
+    nav a {
+        font-size: .6rem;
+        font-style: italic;
+    }
+
+    #meat {
+        position: relative;
+        top: 150px
+    }
+
+    .sun, .headshot {
+        position: absolute;
+        z-index: -1;
+    }
+
+    .sun {
+        height: 270px;
+        width: 100%;
+    }
+
+    .headshot {
+        margin-left: 10%;
+        top: 40px;
+        border-radius: 20%;
+        height: 140px;
+        width: 105px;
+        max-width: 1500;
+        display: fit-content
+    }
+}
+
+@media (max-width: 800px) {
+    nav {
+        display: none
+    }
+
+    #meat {
+        position: relative;
+        top: 100px
+    }
+
+    .sun {
+        height: 220px;
+        width: 100%;
+    }
+
+    .headshot {
+        margin-left: 10%;
+        top: 40px;
+        border-radius: 20%;
+        height: 100px;
+        width: 75px;
+        display: fit-content
+    }
+}
+
+h1 {
+    display: flex;
+    position: relative;
+    justify-content: left;
+    top: 30px
+}
+
+#mycontact {
+    display: flex;
+    position: relative;
+    align-items: right;
+}
+
+/* Nav text styling */
+nav a {
+    color: rgb(121, 0, 173);
+    text-shadow: .5px .5px rgb(245, 242, 247);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Name and contact styling */
+#top-stuff {
+    color: white;
+    font-size: 1.1rem;
+    z-index: 0;
+}
+
+#top-stuff, #mycontact {
+    position: relative;
+    justify-content: left;
+}
+
+#LinkedIn {
+    color: white;
+    text-decoration: underline;
+    display: inline;
+    font-weight: bold;
+    font-style: italic
+}
+
+/* Setting margins for page */
+.newsect {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+/* Styling quote */
+.quote {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+}
+
+blockquote {
+    font-family: Caveat;
+    font-size: 2em;
+    letter-spacing: 15;
+    color: hsl(280, 39%, 91%);
+    text-shadow: 2px 2px rgb(147, 0, 200);
+    transition: color;
+}
+
+blockquote:hover{
+    color: black;
+    text-shadow: none;
+}
+
+
+h2 {
+    background-color: hsl(50, 50%, 50%);
+    font-family: Honk;
+    font-size: 3em;
+    text-shadow: 10px 5px rgb(255,255,255);
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* style for my hrefs that are inside of text*/
+.intextref {
+    text-decoration: none;
+    color: rgb(121, 0, 173);
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* hove and focus for small inputs  */
+input:focus, input:hover, select:focus, select:hover,
+    button:hover, .shortform:hover, .shortform:focus {
+    background-color: hsl(166, 100%, 50%);
+    outline: 100px sloid white
+}
+
+p {
+    font-size: 15px;
+}
+
+/* Style for hover over the Coursework sextion */
+/* Need to make a pop out box describing the use of these technologies */
+.listlink li:hover {
+    /* color: hsl(255, 50%, 50%); */
+    color: rgb(151, 135, 10);
+    font-weight: bold
+}
+
+/* Positioning my ratios in my table. There's probably a better way 
+of doing this. */
+.score {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-width: 2px;
+}
+
+/* href hover style */
+a:hover {
+    outline: 2px solid #00ff22;
+    background-color: rgb(243, 54, 224);
+    color: blue
+}
+
+/* Button hover style */
+button:hover {
+    outline: 5px solid #00ff22;
+    color: rgb(255, 255, 255);
+}
+
+/* Long inputs styling */
+.longform {
+    background-image: url(../images/Iron-Man-Flying.jpg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 15%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fe0101;
+}
+
+.longform:hover, .longform:focus {
+    outline: 10px solid #ff7700;
+    color: white
+}
+
+.end {
+    position: relative;
+    z-index: 2;
+}
+
